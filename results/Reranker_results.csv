@@ -1,0 +1,21 @@
+query,config,rouge_l_precision,rouge_l_recall,rouge_l_f1,faithfulness,latency_ms,guardrail_triggered,confidence_score
+. what is a corporation?,With Cohere Reranker,0.1875,0.2727272727272727,0.2222222222222222,0.9130434782608695,1184.4050884246826,False,0.725065
+why did rachel carson write an obligation to endure,With Cohere Reranker,,,,,1070.6019401550293,True,2.753569e-05
+why did the progressive movement fail to advance racial equality quizlet,With Cohere Reranker,,,,,1874.741792678833,True,3.4537254e-05
+why do police need to understand what the forensic scientists do,With Cohere Reranker,,,,,1131.8960189819336,True,0.009268014
+do owls eat in the day,With Cohere Reranker,,,,,1069.1008567810059,True,0.0003125878
+symptoms of a dying mouse,With Cohere Reranker,,,,,1123.2359409332275,True,0.0016549242
+average number of lightning strikes per day,With Cohere Reranker,,,,,996.0682392120361,True,0.00012339458
+can you burn your lawn with fertilizer,With Cohere Reranker,,,,,1014.214038848877,True,0.040999025
+are volvox autotrophic or heterotrophic,With Cohere Reranker,,,,,977.3731231689453,True,0.004810983
+average force of a raindrop,With Cohere Reranker,,,,,908.5168838500977,True,0.0001344663
+chart for foods low in potassium.,With Cohere Reranker,,,,,50430.527448654175,True,0.016466176
+are saltwater crocodiles legal pets yahoo,With Cohere Reranker,,,,,856.2510013580322,True,6.192364e-06
+dayton ohio time is what,With Cohere Reranker,,,,,1101.7467975616455,True,0.00025915826
+goch meaning,With Cohere Reranker,0.125,0.375,0.1875,0.1875,1877.1958351135254,False,0.994615
+does drinking water help eczema,With Cohere Reranker,,,,,952.9924392700195,True,0.006338922
+how much money has innocet donated to charity,With Cohere Reranker,,,,,921.797513961792,True,7.031184e-05
+symptoms of a gastric ulcer in women,With Cohere Reranker,0.14893617021276595,0.5833333333333334,0.23728813559322032,0.6470588235294118,1105.2353382110596,False,0.52836615
+how often can ativan be taken,With Cohere Reranker,,,,,885.2899074554443,True,0.062331032
+how many oscars did star wars a new home win?,With Cohere Reranker,,,,,980.3569316864014,True,2.1233784e-06
+how many years did william bradford serve as governor of plymouth colony?,With Cohere Reranker,,,,,817.3341751098633,True,0.00013658353

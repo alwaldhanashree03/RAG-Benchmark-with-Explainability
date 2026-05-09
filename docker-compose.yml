@@ -1,0 +1,38 @@
+# Docker Compose configuration for RAG Benchmark System
+# Industry best practice: Easy deployment with environment configuration
+
+version: '3.8'
+
+services:
+  rag-benchmark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-benchmark
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - COHERE_API_KEY=${COHERE_API_KEY}
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Mount data directories for persistence
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./results:/app/results
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# Volumes for persistence
+volumes:
+  data:
+  logs:
+  results:

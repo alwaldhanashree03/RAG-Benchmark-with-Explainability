@@ -1,0 +1,137 @@
+# RAG Benchmark Configuration
+# Following industry best practices for configuration management
+
+# Dataset Configuration
+dataset:
+  name: "msmarco"  # Options: msmarco, natural_questions
+  subset: "passage"
+  num_queries: 500  # Use 500 for initial testing
+  num_passages: 10000  # Limit for development
+  split: "dev"  # train, dev, test
+  cache_dir: "./data/raw"
+
+# Chunking Strategy (LangChain RecursiveCharacterTextSplitter)
+chunking:
+  chunk_size: 512  # tokens
+  chunk_overlap: 50  # tokens
+  separators: ["\n\n", "\n", " ", ""]
+
+# Embedding Configuration
+embeddings:
+  model: "text-embedding-3-small"  # OpenAI model
+  dimensions: 1536
+  batch_size: 100
+  max_retries: 3
+  
+# Vector Database Configuration
+vector_db:
+  type: "chroma"
+  persist_directory: "./data/vector_db"
+  collection_name: "rag_benchmark"
+  distance_metric: "cosine"  # cosine, l2, ip
+
+# LLM Configuration
+llm:
+  model: "gpt-3.5-turbo"  # gpt-3.5-turbo, gpt-4o-mini
+  temperature: 0.0  # Deterministic outputs
+  max_tokens: 512
+  seed: 42  # For reproducibility
+  
+# RAG Configurations
+rag_configs:
+  baseline:
+    name: "Baseline Semantic Search"
+    retrieval_type: "semantic"
+    top_k: 3
+    enabled: true
+    
+  hybrid:
+    name: "Hybrid Search (BM25 + Semantic)"
+    retrieval_type: "hybrid"
+    top_k: 10
+    bm25_weight: 0.5
+    semantic_weight: 0.5
+    final_top_k: 3
+    enabled: true
+    
+  reranker:
+    name: "With Cohere Reranker"
+    retrieval_type: "semantic"
+    top_k: 10
+    reranker_model: "rerank-english-v3.0"
+    reranker_top_k: 3
+    enabled: true
+    
+  query_decomposition:
+    name: "Query Decomposition"
+    retrieval_type: "semantic"
+    decomposition_model: "gpt-3.5-turbo"
+    max_subqueries: 3
+    top_k_per_subquery: 2
+    final_top_k: 3
+    enabled: true
+
+# Evaluation Metrics Configuration
+evaluation:
+  metrics:
+    retrieval:
+      - "precision@3"
+      - "precision@5"
+      - "mrr@10"
+      - "recall@3"
+    generation:
+      - "rouge_l"
+      - "faithfulness"
+      - "answer_relevancy"
+      - "context_precision"
+    operational:
+      - "latency_ms"
+      - "cost_usd"
+      - "num_tokens"
+  statistical_tests:
+    method: "paired_t_test"
+    alpha: 0.05
+    
+# Hallucination Guardrails Configuration
+guardrails:
+  retrieval_threshold: 0.3  # Tuned for MS MARCO cosine similarity distribution
+  nli_enabled: false  # Disabled - too conservative for demo
+  nli_model: "facebook/bart-large-mnli"  # Proven, stable NLI model
+  nli_threshold: 0.5  # Minimum entailment probability
+  confidence_levels:
+    high: 0.8
+    medium: 0.6
+    low: 0.4
+
+# API Rate Limiting
+rate_limiting:
+  openai_rpm: 3500  # Requests per minute
+  openai_tpm: 90000  # Tokens per minute
+  cohere_rpm: 10  # Cohere Trial key limit (upgrade for higher)
+  max_retries: 3
+  retry_delay: 1  # seconds
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}"
+  log_file: "./logs/rag_benchmark.log"
+  rotation: "100 MB"
+  
+# Cost Tracking (USD per 1M tokens)
+cost_config:
+  embeddings:
+    text-embedding-3-small: 0.02
+  llm:
+    gpt-3.5-turbo: 0.5
+    gpt-4o-mini: 0.15
+  reranker:
+    cohere_rerank: 2.0  # per 1K searches
+    
+# Streamlit UI Configuration
+ui:
+  title: "RAG System Benchmark with Explainability"
+  theme: "light"
+  page_icon: "🔍"
+  layout: "wide"
+  show_code: false

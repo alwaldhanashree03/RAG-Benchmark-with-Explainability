@@ -1,0 +1,24 @@
+{
+  "documents": [
+    "Python is a high-level, interpreted programming language created by Guido van Rossum in 1991. It emphasizes code readability with its notable use of significant whitespace. Python supports multiple programming paradigms including procedural, object-oriented, and functional programming.",
+    "Machine learning is a subset of artificial intelligence that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. It focuses on the development of computer programs that can access data and use it to learn for themselves.",
+    "Deep learning is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Deep learning architectures such as deep neural networks, recurrent neural networks, and convolutional neural networks have been applied to computer vision, speech recognition, and natural language processing.",
+    "Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language. NLP techniques include sentiment analysis, machine translation, named entity recognition, and question answering.",
+    "TensorFlow is an open-source machine learning framework developed by Google Brain. It provides a comprehensive ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications.",
+    "PyTorch is an open-source machine learning library developed by Facebook's AI Research lab. It provides a flexible deep learning development platform with strong GPU acceleration and is widely used in research and production for computer vision and natural language processing applications.",
+    "Neural networks are computing systems inspired by biological neural networks that constitute animal brains. They consist of layers of interconnected nodes or neurons that process information using a connectionist approach to computation. Each connection can transmit a signal from one neuron to another.",
+    "Supervised learning is a machine learning approach where the model is trained on labeled data. The algorithm learns to map input data to known output labels. Common supervised learning tasks include classification (predicting categories) and regression (predicting continuous values).",
+    "Unsupervised learning is a type of machine learning that looks for patterns in data without pre-existing labels. It is used to draw inferences from datasets consisting of input data without labeled responses. Common techniques include clustering, dimensionality reduction, and anomaly detection.",
+    "Reinforcement learning is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize cumulative reward. It differs from supervised learning in that correct input/output pairs are never presented, and sub-optimal actions are not explicitly corrected."
+  ],
+  "queries": [
+    "What is Python and who created it?",
+    "Explain machine learning",
+    "What is deep learning?",
+    "What are some NLP techniques?",
+    "Compare TensorFlow and PyTorch",
+    "How do neural networks work?",
+    "What is the difference between supervised and unsupervised learning?",
+    "Explain reinforcement learning"
+  ]
+}

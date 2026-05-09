@@ -1,0 +1,5 @@
+,config,value
+rouge_l_f1_mean,Reranker,0.21567011927181415
+faithfulness_mean,Reranker,0.5825341005967605
+confidence_score_mean,Hybrid,0.5861830590827648
+latency_ms_mean,Hybrid,622.1601009368896

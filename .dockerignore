@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Git
+.git/
+.gitignore
+
+# Data (will be mounted as volume)
+data/raw/*
+data/processed/*
+data/vector_db/*
+
+# Results and logs (will be mounted as volume)
+results/*
+logs/*
+
+# Documentation
+*.pdf
+*.tex
+*.pptx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp_*

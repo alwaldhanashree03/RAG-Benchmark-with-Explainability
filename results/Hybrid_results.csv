@@ -1,0 +1,21 @@
+query,config,rouge_l_precision,rouge_l_recall,rouge_l_f1,faithfulness,latency_ms,guardrail_triggered,confidence_score
+. what is a corporation?,Hybrid Search (BM25 + Semantic),0.2,0.13636363636363635,0.16216216216216214,0.09090909090909091,1543.614387512207,False,0.5
+why did rachel carson write an obligation to endure,Hybrid Search (BM25 + Semantic),0.23809523809523808,0.16666666666666666,0.19607843137254902,0.375,614.4895553588867,False,0.5682244731743114
+why did the progressive movement fail to advance racial equality quizlet,Hybrid Search (BM25 + Semantic),0.045454545454545456,0.3333333333333333,0.08,0.25,782.4311256408691,False,0.5985175625726924
+why do police need to understand what the forensic scientists do,Hybrid Search (BM25 + Semantic),0.1,0.3333333333333333,0.15384615384615383,0.375,534.4815254211426,False,0.5
+do owls eat in the day,Hybrid Search (BM25 + Semantic),0.11764705882352941,0.6666666666666666,0.2,0.3076923076923077,840.4912948608398,False,0.7175869941711426
+symptoms of a dying mouse,Hybrid Search (BM25 + Semantic),0.4,0.2727272727272727,0.3243243243243243,0.2,403.414249420166,False,0.6661444007426855
+average number of lightning strikes per day,Hybrid Search (BM25 + Semantic),0.23529411764705882,0.5,0.31999999999999995,0.46153846153846156,407.8035354614258,False,0.5
+can you burn your lawn with fertilizer,Hybrid Search (BM25 + Semantic),0.13333333333333333,0.3333333333333333,0.19047619047619044,0.2727272727272727,588.5844230651855,False,0.7229653369276654
+are volvox autotrophic or heterotrophic,Hybrid Search (BM25 + Semantic),0.0,0.0,0.0,0.2727272727272727,484.9088191986084,False,0.6724287376809901
+average force of a raindrop,Hybrid Search (BM25 + Semantic),0.058823529411764705,0.3333333333333333,0.1,0.25,471.179723739624,False,0.5545857834304316
+chart for foods low in potassium.,Hybrid Search (BM25 + Semantic),0.0,0.0,0.0,0.2222222222222222,514.2624378204346,False,0.5955615117401521
+are saltwater crocodiles legal pets yahoo,Hybrid Search (BM25 + Semantic),0.0,0.0,0.0,0.14285714285714285,487.7443313598633,False,0.5
+dayton ohio time is what,Hybrid Search (BM25 + Semantic),0.0,0.0,0.0,0.06666666666666667,531.787633895874,False,0.5663026575388859
+goch meaning,Hybrid Search (BM25 + Semantic),0.3076923076923077,0.5,0.380952380952381,0.3333333333333333,882.6076984405518,False,0.5
+does drinking water help eczema,Hybrid Search (BM25 + Semantic),0.0,0.0,0.0,0.23076923076923078,492.4006462097168,False,0.6825385197390741
+how much money has innocet donated to charity,Hybrid Search (BM25 + Semantic),0.058823529411764705,0.3333333333333333,0.1,0.3076923076923077,491.4278984069824,False,0.5
+symptoms of a gastric ulcer in women,Hybrid Search (BM25 + Semantic),0.3157894736842105,0.5,0.3870967741935484,0.2,562.8132820129395,False,0.7055675387382507
+how often can ativan be taken,Hybrid Search (BM25 + Semantic),0.06666666666666667,0.041666666666666664,0.05128205128205127,0.5833333333333334,726.2554168701172,False,0.6176705648702325
+how many oscars did star wars a new home win?,Hybrid Search (BM25 + Semantic),0.0,0.0,0.0,0.2631578947368421,625.8156299591064,False,0.5
+how many years did william bradford serve as governor of plymouth colony?,Hybrid Search (BM25 + Semantic),0.4,0.8,0.5333333333333333,0.4117647058823529,456.68840408325195,False,0.5555671003287814
